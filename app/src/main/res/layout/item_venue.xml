@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/register_txt_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/selectable_container"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/venue_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/header_img"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/venue_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="This is the most beautiful place!"
+                android:textColor="@color/outeamBlack"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/venue_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="This is the most beautiful place!"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/venue_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0"
+                android:drawableLeft="@drawable/vector_pin"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/outeamRed"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="This is the most beautiful place!"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/venue_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:drawableLeft="@drawable/ic_peso_01"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorGreen"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="00.00"
+                android:textColor="@color/colorGreen"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

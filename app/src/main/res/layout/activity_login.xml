@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Login.Login">
+
+
+
+        <com.github.florent37.shapeofview.shapes.DiagonalView
+            android:id="@+id/trek"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/img_header"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:padding="0dp"
+                android:src="@mipmap/trekking" />
+        </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/trek"
+            android:layout_marginTop="48dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/login_txt_design"
+                android:ems="10"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/login_txt_design"
+                android:ems="10"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/login_btn_login"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_margin="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="8.5dp"
+                    android:layout_marginBottom="8.5dp"
+                    android:layout_weight="1"
+                    android:alpha="0.9"
+                    android:background="#57BA98"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OR"
+                    android:textColor="#57BA98"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8.5dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="8.5dp"
+                    android:layout_weight="1"
+                    android:alpha="0.9"
+                    android:background="#57BA98"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/login_txt_design"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="#57BA98" />
+        </LinearLayout>
+
+
+</RelativeLayout>

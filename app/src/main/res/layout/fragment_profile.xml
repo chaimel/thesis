@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="3dp"
+            android:src="@drawable/vector_settings"
+            android:tint="@color/colorGreen" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="108dp"
+            android:layout_gravity="center">
+
+            <com.github.florent37.shapeofview.shapes.CircleView
+                android:id="@+id/circleView"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/img_profilepic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/header_img" />
+
+            </com.github.florent37.shapeofview.shapes.CircleView>
+
+            <ImageView
+                android:id="@+id/btn_upload_pic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|right"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="6dp"
+                android:src="@drawable/vector_camera"
+                android:tint="@color/colorGreen"
+                app:layout_constraintEnd_toEndOf="@+id/circleView" />
+        </FrameLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/myprofile_et_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_txt_design"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:hint="Firstname"
+                        android:longClickable="false"
+                        android:padding="10dp"
+                        android:textColorHint="@color/colorGreen"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/myprofile_et_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_txt_design"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:hint="Lastname"
+                        android:longClickable="false"
+                        android:padding="10dp"
+                        android:textColorHint="@color/colorGreen"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/myprofile_et_aboutyou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_txt_design"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/vector_info"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/colorGreen"
+                    android:focusable="false"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="left"
+                    android:hint="About you!"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:longClickable="false"
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorGreen"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/myprofile_et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_txt_design"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/vector_pin"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorGreen"
+                    android:focusable="false"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:hint="Address"
+                    android:longClickable="false"
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorGreen"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/myprofile_et_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_txt_design"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/vector_bd"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorGreen"
+                    android:focusable="false"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:hint="Birthday"
+                    android:longClickable="false"
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorGreen"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/myprofile_et_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_txt_design"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_gender"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorGreen"
+                    android:focusable="false"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:hint="Gender"
+                    android:longClickable="false"
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorGreen"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/myprofile_et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_txt_design"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_at"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/colorGreen"
+                    android:focusable="false"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:hint="Email"
+                    android:longClickable="false"
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorGreen"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/myprofile_et_contactno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_txt_design"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/vector_phone"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorGreen"
+                    android:focusable="false"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:hint="Contact number"
+                    android:longClickable="false"
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorGreen"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sourcesanspro_light"
+                            android:text="Certificates"
+                            android:textColor="@color/outeamBlack"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/btn_add_cert"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackgroundBorderless"
+                            android:src="@drawable/ic_add"
+                            android:tint="@color/colorGreen" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/certificates_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="155dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/sourcesanspro_light"
+                        android:text="Resume"
+                        android:textColor="@color/outeamBlack"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img_resume"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/header_img" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</FrameLayout>
